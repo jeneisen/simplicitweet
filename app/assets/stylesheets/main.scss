@@ -1,0 +1,136 @@
+// Place all the styles related to the Main controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+// embedded twitter-tweet CSS adopted from https://dev.twitter.com/web/overview/css
+blockquote.twitter-tweet {
+  border: 1px solid black;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+  color: #000;
+	display: inline-block;
+	font: bold 14px/18px Helvetica, Arial, sans-serif;
+  margin: 10px 0;
+  max-width: 468px;
+  padding: 16px;
+}
+
+blockquote.twitter-tweet p {
+  font: normal 18px/24px Georgia, "Times New Roman", Palatino, serif;
+  margin: 0 5px 10px 0;
+}
+
+blockquote.twitter-tweet a[href^="https://twitter.com"] {
+  color: #666;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+blockquote.twitter-tweet .metadata {
+	font-size: 10px;
+	margin-left: 60%;
+}
+
+.navbar-collapse.collapse {
+  display: block!important;
+}
+
+.navbar-nav>li, .navbar-nav {
+  float: left !important;
+}
+
+.navbar-nav.navbar-right:last-child {
+  margin-right: -15px !important;
+}
+
+.navbar-right {
+  float: right!important;
+}
+
+.tweet-data {
+	.btn {
+		background-color: white;
+		margin-bottom: 6%;
+	}
+
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+.tweet-list {
+	h2 {
+		margin-bottom: 40px;
+	}
+}
+
+.intro-header {
+	margin-top: 150px;
+	letter-spacing: 1.1px;
+}
+
+.intro-message {
+	h1 {
+		padding-bottom: 10px;
+	}
+
+	a {
+		color: white;
+
+		&:hover {
+			color: white;
+			text-decoration: none;
+			border-bottom: 1px solid white;
+			padding-bottom: 3px;
+		}
+	}
+}
+
+.full-page {
+	background-color: lightsalmon;
+}
+
+.navbar-toggle .icon-bar {
+	background-color: white;
+}
+
+.login {
+	color: white;
+	text-transform: uppercase;
+}
+
+.logout-nav {
+	a {
+		color: white;
+		background-color: lightsalmon;
+
+		&:hover {
+			background-color: lightsalmon !important;
+			color: black;
+			text-decoration: none;
+		}
+	}
+}
+
+.navbar-default {
+	background-color: lightsalmon;
+	border-color: none;
+}
+
+.name {
+	padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+.search {
+	padding: 6px 15px 6px 30px;
+	margin: 3px;
+	letter-spacing: 1px;
+}
+
+.flash {
+	float: right;
+	margin-right: 50px;
+}

@@ -1,0 +1,20 @@
+<div class="tweet-list col-md-offset-2">
+	<h2>Latest tweets from @<%=@user_name%></h2>
+	<% @tweets.each do |tweet| %>
+		<div class="tweet-data">
+			<blockquote class="twitter-tweet">
+				<p><%= tweet.content %></p>
+				<p class="metadata">posted <%= tweet.posted_at.strftime("%B %d, %Y")%></p>
+			</blockquote>
+			<button type="button" class="btn btn-outline-info">
+				<%= link_to "mark as read", {action: :mark_as_read, id: tweet.id }, method: :delete %>
+			</button>
+		</div>
+	<% end %>
+	<h5>
+		<button type="button" class="btn btn-outline-info">
+			<%= link_to "New Search", "/tweets" %>
+		</button>
+	</h5>
+	<br>
+</div>

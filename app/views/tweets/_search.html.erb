@@ -1,0 +1,14 @@
+<header class="intro-header">
+	<div class="container">
+		<div class="intro-message">
+			<h2>User Timeline Search</h2>
+			<h5>Find recent tweets for any given Twitter handle. Omit the @</h5>
+				<br>
+			    <%= form_tag(tweets_list_path, :method => "get", id: "search-form") do %>
+			    <%= text_field_tag :user_name, params[:user_name], placeholder: "Twitter handle", class: "search" %>
+			    <%= submit_tag "Search", class: "btn btn-lg btn-search" %>
+			    <% end %>
+				<br>
+		</div>
+	</div>
+</header>

@@ -1,0 +1,6 @@
+<section id="tweets">
+	<% Twitter.user_timeline(@user_name).each do |tweet| %>
+		<%= button_to('Destroy', 'http://www.example.com',
+          method: "delete", remote: true, data: { confirm: 'Are you sure?', disable_with: 'loading...' }) %>
+	<% end %>
+</section>
